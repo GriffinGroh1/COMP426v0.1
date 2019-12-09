@@ -1,0 +1,31 @@
+{
+  "users": {
+    "asd": {
+      "passwordHash": "$2a$10$LpkjyjiRhY52887Qlp4YPOPAxNhe16Z9kYPwXY7ZggIT7TUqDjTE."
+    },
+    "ggrs": {
+      "passwordHash": "$2a$10$Wo7g0LLabFZz.im744gBDOk5bgbWmFprau.5dEue4afJjkSvadGTW"
+    },
+    "sf": {
+      "passwordHash": "$2a$10$rmSnOzAmsDnX8Y9/9zY3F.ShzTqCGJ6Wdknq1F8Y7JCQlr0HbDrrO"
+    },
+    "sda": {
+      "passwordHash": "$2a$10$Lk4kEuA7UABlSEVrJQtZQuUXXHAkalElhjA0ETS9XHs3jzIqjTmAO"
+    },
+    "helloworld": {
+      "passwordHash": "$2a$10$PbRma4JDjCKsXGq6jZl43e0r4rbxdAVKRc4sCezwXRuPjJhz0b5Di"
+    },
+    "username": {
+      "passwordHash": "$2a$10$OD4rknLB6JENgK8legcpxeWUGNkOcAaK.TIzgTAsaEpUVSlgLFZl6"
+    },
+    "griffingroh2": {
+      "passwordHash": "$2a$10$g1fxtJIUtKESRWbOpUPuKOrpzehYSKPZjNXqQUFXZC87hG/HE/Wiq"
+    },
+    "griasd": {
+      "passwordHash": "$2a$10$myT3Gm0TZF5o8T2YFeuWs.RK1vFrLniN3Y2E9HcHyjl9DshpHYv2G"
+    },
+    "newuser": {
+      "passwordHash": "$2a$10$5kMJb51AkUDzDgWYAn6mn.hgm4xOPlsQWhgOs68in/5FsZoW/unam"
+    }
+  }
+}
