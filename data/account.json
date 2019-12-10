@@ -26,6 +26,15 @@
     },
     "newuser": {
       "passwordHash": "$2a$10$5kMJb51AkUDzDgWYAn6mn.hgm4xOPlsQWhgOs68in/5FsZoW/unam"
+    },
+    "griffin groh": {
+      "passwordHash": "$2a$10$38rIB0GOQkAud.eQ/u5NpuxzE8/zxjuqQw9wCTlP/O1dQOsI8CMQK"
+    },
+    "griffingroh1": {
+      "passwordHash": "$2a$10$zBdcC4I6/vxf1ZGaZCqpwOxUu/8Vd/pK2/HJnKcbuAR5BOKvT8P9e"
+    },
+    "griffingrohabc": {
+      "passwordHash": "$2a$10$SKfw9XYl5nES8ifYpwYb0OF2ZCvwXmG5.57rPjWjo8HOGvTBFHSF6"
     }
   }
 }

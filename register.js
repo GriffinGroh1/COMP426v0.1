@@ -40,20 +40,5 @@ async function makeAccount(e) {
         console.log("success")
         window.location.href = "/index.html";
     
-    // try{
-    //     await axios.post(`/create`,{email,pass,data});
-    //     return true;
-    // } catch(error) {
-    //     return false;
-    // }
 
 }
-
-// export async function createAccount({name, pass}) {
-//     try {
-//       await axios.post(`/create`, {name, pass,data});
-//       return true;
-//     } catch (error) {
-//       return false;
-//     }
-//   }

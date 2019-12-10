@@ -1,19 +1,88 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-    </head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-signin-client_id" content="497688146905-7vr5q3e3dmtb3r8tqfc6t9gbjm2eg719.apps.googleusercontent.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fantasy Cheat Code Login Portal</title>
 
+        <!-- Include links to CSS stylesheets below -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+        <link rel="stylesheet" href="stylesheet.css" />
+        <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet"> 
+
+    </head>
+    <div id="login">
+            <div class="login-card">
+                <div class="card-title">
+                    <h1>Fantasy Football Cheat Code Sign in</h1>
+                </div>
+
+                <div class="content">
+                    <form id="signin-form">
+                        <input class="input" id="name" type="name"  name="name" title="name" placeholder="username" required autofocus>
+                        <input class="input" id="pass" type="password" name="pass" title="pass" placeholder="Password" required>
+
+                        <div class="field">
+                            <div class="control">
+                                <div class="g-signin2" data-onsuccess="onSignUp"></div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                <a href="#" onclick="signOut();">Sign out</a>
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <p id="message1"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div> 
 
     <body>
-        
-            <div id = "root">
-                <input id = "usernameField">
-                <input id = "passwordField">
-                <button id = "makeAcc">SignUp!</button>
+        <div id="login">
+            <div class="login-card">
+                <div class="card-title">
+                    <h1>Fantasy Football Cheat Code SignUp</h1>
+                </div>
+
+                <div class="content">
+                    <form id="signup-form">
+                        <input class="input" id="name" type="name"  name="name" title="name" placeholder="username" required autofocus>
+                        <input class="input" id="pass" type="password" name="pass" title="pass" placeholder="Password" required>
+
+                        <div class="field">
+                            <div class="control">
+                                <div class="g-signin2" data-onsuccess="onSignUp"></div>
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                                <a href="#" onclick="signOut();">Sign out</a>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <p id="message"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
+        </div>
 
+            <body>
+        
+        </div>
 
+        
+
+        <!-- Include links to JavaScript files below -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="register.js"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="signup.js"></script>
     </body>
 </html>
