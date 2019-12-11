@@ -251,7 +251,60 @@ export const loadPage = function() {
 };
 
 
+export async function buttonClick() {
+  const pubRoot = new axios.create({
+    baseURL: "http://localhost:3000/public"
+  });
+  
+  async function createAuthor(i, {Rk = '1',Player  = 'ChristianMcCaffrey', PlayerCode = 'McCaCh01', Tm = '', FantPos = '', Age = '', G = '', GS = '', Cmp = '', PassAtt = '', PassYds = '', PassTD = '', Int = '',
+RushAtt = '', RushYds = '', Y = '', RushTD = '', Tgt = '', Rec = '', RecYds = '', RecTD = '', Fmb = '', FL = '', TD = '', _2PM = '', _2PP = '', FantPt = '', PPR = '', DKPt = '', FDPt = '', VBD = '', PosRank = '', OvRank = ''}) {
+    return await pubRoot.post(`/players/` + i, {
+      data: {Rk, Player, PlayerCode, Tm, FantPos, Age, G, GS, Cmp, PassAtt, PassYds, PassTD, Int, RushAtt, RushYds, Y, RushTD, Tgt, Rec, RecYds, RecTD, Fmb, FL, TD, _2PM, _2PP, FantPt, PPR, DKPt, FDPt, VBD, PosRank, OvRank}
+    })
+  }
+  for (let i = 0; i < playerData.length; i++) {
+    (async () => {
+    await createAuthor(i, {
+      Rk: playerData[i].Rk,
+      Player: playerData[i].Player,
+      PlayerCode: playerData[i].PlayerCode,
+      Tm: playerData[i].Tm,
+      FantPos: playerData[i].FantPos,
+      Age: playerData[i].Age,
+      G: playerData[i].G,
+      GS: playerData[i].GS,
+      Cmp: playerData[i].Cmp,
+      PassAtt: playerData[i].PassAtt,
+      PassYds: playerData[i].PassYds,
+      PassTD: playerData[i].PassTD,
+      Int: playerData[i].Int,
+      RushAtt: playerData[i].RushAtt,
+      RushYds: playerData[i].RushYds,
+      Y: playerData[i].Y,
+      RushTD: playerData[i].RushTD,
+      Tgt: playerData[i].Tgt,
+      Rec: playerData[i].Rec,
+      RecYds: playerData[i].RecYds,
+      RecTD: playerData[i].RecTD,
+      Fmb: playerData[i].Fmb,
+      FL: playerData[i].FL,
+      TD: playerData[i].TD,
+      _2PM: 0,
+      _2PP: 0,
+      FantPt: playerData[i].FantPt,
+      PPR: playerData[i].PPR,
+      DKPt: playerData[i].DKPt,
+      FDPt: playerData[i].FDPt,
+      VBD: playerData[i].VBD,
+      PosRank: playerData[i].PosRank,
+      OvRank: playerData[i].OvRank,
 
+    });
+    })();
+  }
+  
+  alert("Done")
+}
 
 
 /**
@@ -259,4 +312,5 @@ export const loadPage = function() {
  */
 $(function() {
     loadPage();
+    $(document).on("click", "#postBtn", buttonClick);
 });

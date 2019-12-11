@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet"> 
 
     </head>
+    <button id = "privateTest">PrivateTest</button>
     <div id="login">
             <div class="login-card">
                 <div class="card-title">
@@ -21,14 +22,14 @@
 
                 <div class="content">
                     <form id="signin-form">
-                        <input class="input" id="name" type="name"  name="name" title="name" placeholder="username" required autofocus>
-                        <input class="input" id="pass" type="password" name="pass" title="pass" placeholder="Password" required>
+                        <input class="input" id="nameSignIn" type="name"  name="name" title="name" placeholder="username" required autofocus>
+                        <input class="input" id="passSignIn" type="password" name="pass" title="pass" placeholder="Password" required>
 
                         <div class="field">
                             <div class="control">
                                 <div class="g-signin2" data-onsuccess="onSignUp"></div>
-                                <button type="submit" class="btn btn-primary">Sign in</button>
-                                <a href="#" onclick="signOut();">Sign out</a>
+                                <button type="submit" id = "signInBtn" class="btn btn-primary">Sign in</button>
+                                <a href="#" id = "signOut">Sign out</a>
                             </div>
                         </div>
                         <div>
@@ -60,7 +61,7 @@
                             <div class="control">
                                 <div class="g-signin2" data-onsuccess="onSignUp"></div>
                                 <button type="submit" class="btn btn-primary">Sign Up</button>
-                                <a href="#" onclick="signOut();">Sign out</a>
+                                <a href="#" id = "signOut" >Sign out</a>
                             </div>
                         </div>
 
@@ -74,15 +75,16 @@
             </div>
         </div>
 
-            
+            <body>
         
-        
+        </div>
 
         
 
         <!-- Include links to JavaScript files below -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <script src="signup.js"></script>
+        <script src="signup.js" type = "module"></script>
+        <script src="node_modules/axios/dist/axios.min.js"></script>
     </body>
 </html>

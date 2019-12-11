@@ -1,2 +1,9 @@
 {
+  "players": {
+    "hello": "a",
+    "a2": "b"
+  },
+  "admin": {
+    "line1": "a"
+  }
 }
