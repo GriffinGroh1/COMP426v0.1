@@ -8,7 +8,6 @@ $(function() {
       $message.html('');
   
       const data2 = $form.serialize();
-      console.log(data2);
       
       $.ajax({
         url: 'http://localhost:3000/account/create',
@@ -18,7 +17,7 @@ $(function() {
 
         
       }).then(() => {
-        $message.html('<span class="has-text-success">Success! You are now signed up in.</span>');
+        $message.html('<span class="has-text-success">Success! You are now signed up</span>');
       }).catch(() => {
         $message.html('<span class="has-text-danger">Something went wrong and you were not signed up in. Check your email and password and your internet connection.</span>');
       });
@@ -132,6 +131,14 @@ $.ajax({
   } ,
   withCredentials: true,
 });
+$.ajax({
+  url: 'http://localhost:3000/public',
+  type: 'POST',
+  data: {
+    "Testing": "abc",
+  }
+})
+
     // The ID token you need to pass to your backend:
     var id_token = googleUser.getAuthResponse().id_token;
     console.log("ID Token: " + id_token);

@@ -35,6 +35,66 @@
     },
     "griffingrohabc": {
       "passwordHash": "$2a$10$SKfw9XYl5nES8ifYpwYb0OF2ZCvwXmG5.57rPjWjo8HOGvTBFHSF6"
+    },
+    "testacc123": {
+      "passwordHash": "$2a$10$nVQXlgqR4ocAjDE.kU1xkOt1NuVTXbtTq3Yo3JAAR80HAfO3joG2y"
+    },
+    "griffingrohtest22": {
+      "passwordHash": "$2a$10$mVgnCaHTN0Otf3aAndxTyep/oFkixCJq5KR4Y/kadFN8FjZLCK.Ae"
+    },
+    "griffingrohtest221": {
+      "passwordHash": "$2a$10$7QIXk2UtBKyhAqKok.zqcODzMlUdli3DEmG/T97gvsGXqzPEU7b5q"
+    },
+    "newuser2": {
+      "passwordHash": "$2a$10$U1NxKdLUwzwOIN4d68FErOGMPZRhZtRLyha24HrmFRqL/FzVhK4uC"
+    },
+    "admin": {
+      "passwordHash": "$2a$10$s6d8hndhVzLoVb7qLTbvtedjwb7n4Nd7oIAYyytnAfRPYvpuGFlgK"
+    },
+    "hello": {
+      "passwordHash": "$2a$10$wOGN/IKnLLES0.xU.wUgD.dAn4bKh5Cz9HmJtyNjNBuTLoLRVnuAW"
+    },
+    "ggroh": {
+      "passwordHash": "$2a$10$HB1setJNYDJp6E0mqJqbgeF93vzUjYsFz5hcICeS6kS4oZqXdKUqW",
+      "data": {
+        "firstname": "Griffin"
+      }
+    },
+    "tetetssaf": {
+      "passwordHash": "$2a$10$UH/msl.ZOf79XLqR559cNeXMHYK4tupbIZe4ElFk7WAp0Hv9ZcfBS",
+      "data": {
+        "firstname": "Griffin"
+      }
+    },
+    "test": {
+      "passwordHash": "$2a$10$wweMrDGWTzupbwQKarIEb.Goy.ZuOQ4BrJy0oUMeh8ehbFTsBKmCK",
+      "data": {
+        "firstname": "asdasd"
+      }
+    },
+    "alphabeta": {
+      "passwordHash": "$2a$10$pfRSzK88zsGtl2ba08zdF.2qSE9KzLcmZBT59lpwljIW03ZtnASuK"
+    },
+    "ahsjkdh": {
+      "passwordHash": "$2a$10$imhUTfxGQQR/PnDyaKfWRexNQm6OhKYHTN2BbbOICZB4cPp0b22ji"
+    },
+    "asdasdad": {
+      "passwordHash": "$2a$10$4K7qANBacmCPihKmF/dWNOWJ28m2bAXnX/3ObYupXL2bNLz/JrCXC"
+    },
+    "asdfasdf": {
+      "passwordHash": "$2a$10$MYy5VUSaujK/XgzkmwC11u.IPtIbwMcfKClJQWPQfEu9JC6X2ZiZa"
+    },
+    "help": {
+      "passwordHash": "$2a$10$d4AISiN.NuarpqCRmiLMqelWtmFnMUxkl4MjYF3.V7ypqMzvoZps6"
+    },
+    "bigboidom": {
+      "passwordHash": "$2a$10$ssIqyA1odZbfegDM3c676u4uEZZZgA0BwZ5G/f2BGK/L1eY4YBp62"
+    },
+    "bigboidom2": {
+      "passwordHash": "$2a$10$bc7GkDBIyCnNSs7NQvYIUewvwgcRUzydHTg4oYq/Sepe8xtLAdKuC"
+    },
+    "anothertest": {
+      "passwordHash": "$2a$10$piZOxYlG/mcDB1bqe6BfMuTSr/KDGI.2VRLsnhvhwZ4anGwNnEIYi"
     }
   }
 }

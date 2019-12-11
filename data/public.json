@@ -1,2 +1,12 @@
 {
+  "authors": {
+    "first": "chris",
+    "last": "Doe",
+    "numBooks": 4
+  },
+  "players": {
+    "first": "chris",
+    "last": "NEW2",
+    "numBooks": 4
+  }
 }
