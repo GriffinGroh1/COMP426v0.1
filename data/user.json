@@ -7,7 +7,21 @@
     "accountss": {
       "line1": "a",
       "line2": "b"
-    }
+    },
+    "players": [
+      {
+        "line1": "CookDa01"
+      },
+      {
+        "line1": "JackLa00"
+      },
+      {
+        "line1": "JackLa00"
+      },
+      {
+        "line1": "JackLa00"
+      }
+    ]
   },
   "griffin22": {
     "griffin22": {

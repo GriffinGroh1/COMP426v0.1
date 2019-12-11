@@ -99,7 +99,7 @@ export const renderPage = function(player, team) {
   <br>
   Position Rank: ${player.PosRank}
     <br></br>
-    <button id="add-button" class="button is-black">Add to Team</button>  
+    <button id="add-button" class="button is-black" data="${player.PlayerCode}">Add to Team</button>  
     <button id="flip-button" class="button is-black" data="${player.PlayerCode}">Flip Card</button>  
 
     
@@ -134,8 +134,8 @@ Receiving Yards: ${player.RecYds}
 <br>
 Receiving TDs: ${player.RecTD}
 <br></br>
- <button id="add-button" class="button is-black">Add to Team</button>  
- <button id="flip-back-button" class="button is-black" data="${player.PlayerCode}">Flip Card</button>  
+<button id="add-button" class="button is-black" data="${player.PlayerCode}">Add to Team</button>  
+<button id="flip-back-button" class="button is-black" data="${player.PlayerCode}">Flip Card</button>  
 
 
 </div>
@@ -188,11 +188,60 @@ $(`#${editPlayer.PlayerCode}`).replaceWith(PlayerForm);
 
 };
 
+/**
+ * Handles the JavaScript event representing a user clicking on the "edit"
+ *     button for a particular hero.
+ * @param event  The JavaScript event that is being handled
+ */
+export async function handleAddTeam(event) {
+  // TODO: Render the hero edit form for the clicked hero and replace the
+  //       hero's card in the DOM with their edit form instead
+
+  event.preventDefault();
+  let PlayerCode = $(event.currentTarget).attr("data");
+  let editPlayer = playerData.find((player) => player.PlayerCode == PlayerCode);
+  let team = teamData.find((t) => t.Team == editPlayer.Tm);
+  console.log(editPlayer.Player);
+  let playerAdd = editPlayer.Player;
+  //
+  let axiosPass = PlayerCode;
+  alert(axiosPass);
+  let tok = localStorage.getItem('jwt');
+  let authHeader = 'Bearer ' + tok;
+  alert(authHeader)
+  const result = await axios({
+    method: 'post',
+    url: 'http://localhost:3000/user/players',
+    headers: {Authorization: authHeader},
+    //withCredentials: true,
+    data: {
+      'data': {
+        'line1': axiosPass,
+      },
+      "type": "merge"
+    }
+  });
+  alert("Added!")
+  // let editPlayerForm = renderBackCard(editPlayer, team);
+  
+// $(`#${editPlayer.PlayerCode}`).replaceWith(editPlayerForm);
+  
+
+};
+
+
+
+
+
+
+
 export const loadPage = function(players) {
 
    const $root = $('#root');
    $("#root").on("click", "#flip-button", handleFlipSubmit);
    $("#root").on("click", "#flip-back-button", handleFlipBackSubmit);
+  $("#root").on("click", "#add-button", handleAddTeam);
+
 
     $root.append(renderHeader);
     $('#pageheader').append('<div class="columns is-multiline" id="addhere" style="margin-left: 0.025%">');
