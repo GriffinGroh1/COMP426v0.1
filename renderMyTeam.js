@@ -1,3 +1,4 @@
+
 export const renderHeader = function() {
   
   return `<section>
@@ -62,7 +63,7 @@ export const renderPage = function(player, team) {
  <img class="image" style="display: inline-block; width: 7%; height: 7%" src="${team.Img}">
  <img class="image" style="display: inline-block; width: 10%; height: 10%" src="${player.Img}">
  &nbsp;&nbsp;${player.Player} -- ${player.FantPos} -- ${team.Place} ${team.Mascot}
-<span style="float: right">Points: ${player.FantPt}&nbsp;&nbsp;&nbsp;<button class="button is-dark">Remove Player</button></span></p>
+<span style="float: right">Points: ${player.FantPt}&nbsp;&nbsp;&nbsp;<button id = "removePlayer" class="button is-dark">Remove Player</button></span></p>
  <p class="subtitle is-6" style="background: ${team.Primary}; color: white; text-align: center">
  <span style="font-weight: bold">Pass Att: </span>${player.PassAtt} &nbsp;&nbsp;
  <span style="font-weight: bold">Pass Yds: </span>${player.PassYds} &nbsp;&nbsp;
@@ -132,7 +133,7 @@ export const loadPage = function(players) {
     let totRecYds = 0;
     let totRecTD = 0;
 
-     for(let x = 0; x<9; x++) {
+     for(let x = 0; x<players.length; x++) {
       team = teamData.find((t) => t.Team == players[x].Tm);
       totalPoints += players[x].FantPt;
       totPassAtt += players[x].PassAtt;
@@ -164,10 +165,34 @@ export const loadPage = function(players) {
      
 };
 
+export async function getPlayers() {
+  let tok = localStorage.getItem('jwt');
+  //alert(tok)
+  let authHeader = 'Bearer ' + tok;
 
+  const result = await axios({
+    method: 'get',
+    url: 'http://localhost:3000/user/players',
+    headers: {Authorization: authHeader},
+    //withCredentials: true,
+    data: {
+    }
+  })
+  //an array of players for user
+  let anArray = result.data.result;
+
+  for (let i = 0; i < anArray.length; i++) {
+    console.log(anArray[i].player)
+  }
+  let emptyArray = []
+  for (let i = 0; i < anArray.length; i++) {
+    let editPlayer = playerData.find((player) => player.PlayerCode == anArray[i].player);
+    emptyArray.push(editPlayer)
+  }
+  console.log(emptyArray)
+  loadPage(emptyArray)
+}
 
 $(function() {
-    loadPage(playerData);
-    
-    
+  getPlayers()  
 });

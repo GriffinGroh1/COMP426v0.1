@@ -205,10 +205,10 @@ export async function handleAddTeam(event) {
   let playerAdd = editPlayer.Player;
   //
   let axiosPass = PlayerCode;
-  alert(axiosPass);
+  //alert(axiosPass);
   let tok = localStorage.getItem('jwt');
   let authHeader = 'Bearer ' + tok;
-  alert(authHeader)
+  //alert(authHeader)
   const result = await axios({
     method: 'post',
     url: 'http://localhost:3000/user/players',
@@ -216,12 +216,12 @@ export async function handleAddTeam(event) {
     //withCredentials: true,
     data: {
       'data': {
-        'line1': axiosPass,
+        'player': axiosPass,
       },
       "type": "merge"
     }
   });
-  alert("Added!")
+  //alert("Added!")
   // let editPlayerForm = renderBackCard(editPlayer, team);
   
 // $(`#${editPlayer.PlayerCode}`).replaceWith(editPlayerForm);
