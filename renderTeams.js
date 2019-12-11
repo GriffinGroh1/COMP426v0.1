@@ -34,9 +34,6 @@ export const renderHeader = function() {
       <a class="navbar-item" onclick="window.open('myTeam.html', '_self')">
         My Team
       </a>
-      <a class="navbar-item">
-        <input class="input" type="text" placeholder="Search">
-      </a>
     
       
         </div>
