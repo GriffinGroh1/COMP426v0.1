@@ -1,4 +1,3 @@
-
 export const renderHeader = function() {
   
   return `<section>
@@ -63,7 +62,7 @@ export const renderPage = function(player, team) {
  <img class="image" style="display: inline-block; width: 7%; height: 7%" src="${team.Img}">
  <img class="image" style="display: inline-block; width: 10%; height: 10%" src="${player.Img}">
  &nbsp;&nbsp;${player.Player} -- ${player.FantPos} -- ${team.Place} ${team.Mascot}
-<span style="float: right">Points: ${player.FantPt}&nbsp;&nbsp;&nbsp;<button id = "removePlayer" class="button is-dark">Remove Player</button></span></p>
+<span style="float: right">Points: ${player.FantPt}&nbsp;&nbsp;&nbsp;<button id = ${player.PlayerCode} class="button is-dark">Remove Player</button></span></p>
  <p class="subtitle is-6" style="background: ${team.Primary}; color: white; text-align: center">
  <span style="font-weight: bold">Pass Att: </span>${player.PassAtt} &nbsp;&nbsp;
  <span style="font-weight: bold">Pass Yds: </span>${player.PassYds} &nbsp;&nbsp;
@@ -109,7 +108,32 @@ export const handleFlipBackSubmit = function(event) {
   
 
 };
+export async function handleRemoveClick(event) {
+  alert("Remove?")
+  alert(event.currentTarget.id)
+  let playerToRemove = event.currentTarget.id;
 
+  //Testing code
+  let tok = localStorage.getItem('jwt');
+  let authHeader = "Bearer " + tok;
+  alert(playerToRemove)
+  const result = await axios({
+    method: 'delete',
+    url: 'http://localhost:3000/user/players',
+    headers: {Authorization: authHeader},
+    data: {
+      
+        'player': playerToRemove
+      
+    }
+  })
+  alert("Deleted")
+
+
+  //getPlayers()
+
+  //end testing
+}
 export const loadPage = function(players) {
 
      // Grab a jQuery reference to the root HTML element
@@ -118,6 +142,7 @@ export const loadPage = function(players) {
      const $root = $('#root');
     $root.on("click", "#flip-button", handleFlipSubmit);
     $root.on("click", "#flip-back-button", handleFlipBackSubmit);
+    $root.on('click', '.button, .is-dark', handleRemoveClick);
 
     $root.append(renderHeader);
     $('#pageheader').append('<div id="addhere" class="column"><p class="title is-2" style="text-align: center">--- Welcome to My Team ---</p><p class="subtitle" style="text-align: center">Add Players to Find the Best Possible Team</p>');
@@ -169,16 +194,16 @@ export async function getPlayers() {
   let tok = localStorage.getItem('jwt');
   //alert(tok)
   let authHeader = 'Bearer ' + tok;
-
-  const result = await axios({
-    method: 'get',
-    url: 'http://localhost:3000/user/players',
-    headers: {Authorization: authHeader},
-    //withCredentials: true,
-    data: {
-    }
-  })
-  //an array of players for user
+  try {
+    const result = await axios({
+     method: 'get',
+      url: 'http://localhost:3000/user/players',
+      headers: {Authorization: authHeader},
+      //withCredentials: true,
+      data: {
+      }
+    })
+    //an array of players for user
   let anArray = result.data.result;
 
   for (let i = 0; i < anArray.length; i++) {
@@ -191,6 +216,11 @@ export async function getPlayers() {
   }
   console.log(emptyArray)
   loadPage(emptyArray)
+  }
+  catch(error) {
+    let arr = []
+    loadPage(arr);
+  }
 }
 
 $(function() {

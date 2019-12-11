@@ -32,9 +32,7 @@ export const renderHeader = function() {
     <a class="navbar-item" onclick="window.open('myTeam.html', '_self')">
       My Team
     </a>
-    <a class="navbar-item">
-      <input class="input" type="text" placeholder="Search">
-    </a>
+   
   
     
       </div>
@@ -205,7 +203,7 @@ export async function handleAddTeam(event) {
   let playerAdd = editPlayer.Player;
   //
   let axiosPass = PlayerCode;
-  //alert(axiosPass);
+  alert('Added to team!');
   let tok = localStorage.getItem('jwt');
   let authHeader = 'Bearer ' + tok;
   //alert(authHeader)

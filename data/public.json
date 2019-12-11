@@ -1333,7 +1333,7 @@
     "35": {
       "Rk": 36,
       "Player": "D.J. Moore",
-      "PlayerCode": "MoorD.00",
+      "PlayerCode": "MoorD00",
       "Tm": "CAR",
       "FantPos": "WR",
       "Age": 22,
@@ -2056,7 +2056,7 @@
       "Rk": 55,
       "Player": "Emmanuel Sanders",
       "PlayerCode": "SandEm00",
-      "Tm": "2TM",
+      "Tm": "SFO",
       "FantPos": "WR",
       "Age": 32,
       "G": 14,
@@ -4868,7 +4868,7 @@
       "Rk": 130,
       "Player": "Kenyan Drake",
       "PlayerCode": "DrakKe00",
-      "Tm": "2TM",
+      "Tm": "ARI",
       "FantPos": "RB",
       "Age": 25,
       "G": 11,
@@ -5475,7 +5475,7 @@
     "144": {
       "Rk": 146,
       "Player": "T.Y. Hilton",
-      "PlayerCode": "HiltT.00",
+      "PlayerCode": "HiltT00",
       "Tm": "IND",
       "FantPos": "WR",
       "Age": 30,
@@ -6312,7 +6312,7 @@
       "Rk": 168,
       "Player": "Mohamed Sanu",
       "PlayerCode": "SanuMo00",
-      "Tm": "2TM",
+      "Tm": "NWE",
       "FantPos": "WR",
       "Age": 30,
       "G": 12,
@@ -7337,7 +7337,7 @@
     "193": {
       "Rk": 195,
       "Player": "J.D. McKissic",
-      "PlayerCode": "McKiJ.00",
+      "PlayerCode": "McKiJ00",
       "Tm": "DET",
       "FantPos": "RB",
       "Age": 26,
@@ -7946,7 +7946,7 @@
       "Rk": 211,
       "Player": "Josh Gordon",
       "PlayerCode": "GordJo02",
-      "Tm": "2TM",
+      "Tm": "SEA",
       "FantPos": "WR",
       "Age": 28,
       "G": 10,
@@ -8363,7 +8363,7 @@
     "220": {
       "Rk": 222,
       "Player": "O.J. Howard",
-      "PlayerCode": "HowaO.00",
+      "PlayerCode": "HowaO00",
       "Tm": "TAM",
       "FantPos": "TE",
       "Age": 25,
@@ -9883,7 +9883,7 @@
     "260": {
       "Rk": 262,
       "Player": "James O'Shaughnessy",
-      "PlayerCode": "O'ShJa00",
+      "PlayerCode": "OShJa00",
       "Tm": "JAX",
       "FantPos": "TE",
       "Age": 27,
@@ -10302,7 +10302,7 @@
       "Rk": 273,
       "Player": "Pharoh Cooper",
       "PlayerCode": "CoopPh00",
-      "Tm": "2TM",
+      "Tm": "ARI",
       "FantPos": "WR",
       "Age": 24,
       "G": 10,
@@ -10413,44 +10413,6 @@
       "OvRank": null
     },
     "274": {
-      "Rk": 276,
-      "Player": "Kelvin Harmon",
-      "PlayerCode": "HarmKe00",
-      "Tm": "WAS",
-      "FantPos": "WR",
-      "Age": 23,
-      "G": 13,
-      "GS": 6,
-      "Cmp": 0,
-      "PassAtt": 0,
-      "PassYds": 0,
-      "PassTD": 0,
-      "Int": 0,
-      "RushAtt": 0,
-      "RushYds": 0,
-      "Y": {
-        "A": null,
-        "R": 12.6
-      },
-      "RushTD": 0,
-      "Tgt": 30,
-      "Rec": 20,
-      "RecYds": 252,
-      "RecTD": 0,
-      "Fmb": 0,
-      "FL": 0,
-      "TD": 0,
-      "_2PM": 0,
-      "_2PP": 0,
-      "FantPt": 25,
-      "PPR": 45.2,
-      "DKPt": 48.2,
-      "FDPt": 35.2,
-      "VBD": null,
-      "PosRank": 108,
-      "OvRank": null
-    },
-    "275": {
       "Rk": 277,
       "Player": "KeeSean Johnson",
       "PlayerCode": "JohnKe07",
@@ -10488,7 +10450,7 @@
       "PosRank": 112,
       "OvRank": null
     },
-    "276": {
+    "275": {
       "Rk": 278,
       "Player": "Eli Manning",
       "PlayerCode": "MannEl00",
@@ -10526,7 +10488,7 @@
       "PosRank": 46,
       "OvRank": null
     },
-    "277": {
+    "276": {
       "Rk": 279,
       "Player": "Ito Smith",
       "PlayerCode": "SmitIt00",
@@ -10564,7 +10526,7 @@
       "PosRank": 76,
       "OvRank": null
     },
-    "278": {
+    "277": {
       "Rk": 280,
       "Player": "Jordan Wilkins",
       "PlayerCode": "WilkJo01",
@@ -10602,7 +10564,7 @@
       "PosRank": 77,
       "OvRank": null
     },
-    "279": {
+    "278": {
       "Rk": 281,
       "Player": "Albert Wilson",
       "PlayerCode": "WilsAl02",
@@ -10640,7 +10602,7 @@
       "PosRank": 111,
       "OvRank": null
     },
-    "280": {
+    "279": {
       "Rk": 282,
       "Player": "Jarius Wright",
       "PlayerCode": "WrigJa02",
@@ -10678,7 +10640,7 @@
       "PosRank": 109,
       "OvRank": null
     },
-    "281": {
+    "280": {
       "Rk": 283,
       "Player": "Dion Lewis",
       "PlayerCode": "LewiDi00",
@@ -10716,7 +10678,7 @@
       "PosRank": 78,
       "OvRank": null
     },
-    "282": {
+    "281": {
       "Rk": 284,
       "Player": "Dante Pettis",
       "PlayerCode": "PettDa00",
@@ -10754,7 +10716,7 @@
       "PosRank": 115,
       "OvRank": null
     },
-    "283": {
+    "282": {
       "Rk": 285,
       "Player": "Seth Roberts",
       "PlayerCode": "RobeSe00",
@@ -10792,7 +10754,7 @@
       "PosRank": 114,
       "OvRank": null
     },
-    "284": {
+    "283": {
       "Rk": 286,
       "Player": "Laquon Treadwell",
       "PlayerCode": "TreaLa00",
@@ -10830,7 +10792,7 @@
       "PosRank": 113,
       "OvRank": null
     },
-    "285": {
+    "284": {
       "Rk": 287,
       "Player": "Rhett Ellison",
       "PlayerCode": "ElliRh00",
@@ -10868,45 +10830,7 @@
       "PosRank": 46,
       "OvRank": null
     },
-    "286": {
-      "Rk": 288,
-      "Player": "Bennie Fowler",
-      "PlayerCode": "FowlBe00",
-      "Tm": "NYG",
-      "FantPos": "WR",
-      "Age": 28,
-      "G": 8,
-      "GS": 2,
-      "Cmp": 0,
-      "PassAtt": 0,
-      "PassYds": 0,
-      "PassTD": 0,
-      "Int": 0,
-      "RushAtt": 1,
-      "RushYds": 20,
-      "Y": {
-        "A": 20,
-        "R": 8.39
-      },
-      "RushTD": 0,
-      "Tgt": 36,
-      "Rec": 23,
-      "RecYds": 193,
-      "RecTD": 0,
-      "Fmb": 0,
-      "FL": 0,
-      "TD": 0,
-      "_2PM": 0,
-      "_2PP": 0,
-      "FantPt": 23,
-      "PPR": 46.3,
-      "DKPt": 49.3,
-      "FDPt": 34.8,
-      "VBD": null,
-      "PosRank": 116,
-      "OvRank": null
-    },
-    "287": {
+    "285": {
       "Rk": 289,
       "Player": "Brian Hoyer",
       "PlayerCode": "HoyeBr00",
@@ -10944,7 +10868,7 @@
       "PosRank": 48,
       "OvRank": null
     },
-    "288": {
+    "286": {
       "Rk": 290,
       "Player": "Bilal Powell",
       "PlayerCode": "PoweBi00",
@@ -10982,7 +10906,7 @@
       "PosRank": 79,
       "OvRank": null
     },
-    "289": {
+    "287": {
       "Rk": 291,
       "Player": "Byron Pringle",
       "PlayerCode": "PrinBy00",
@@ -11020,7 +10944,7 @@
       "PosRank": 117,
       "OvRank": null
     },
-    "290": {
+    "288": {
       "Rk": 292,
       "Player": "Ryquell Armstead",
       "PlayerCode": "ArmsRy00",
@@ -11058,7 +10982,7 @@
       "PosRank": 80,
       "OvRank": null
     },
-    "291": {
+    "289": {
       "Rk": 293,
       "Player": "Tavon Austin",
       "PlayerCode": "AustTa00",
@@ -11096,7 +11020,7 @@
       "PosRank": 119,
       "OvRank": null
     },
-    "292": {
+    "290": {
       "Rk": 294,
       "Player": "Jake Kumerow",
       "PlayerCode": "KumeJa00",
@@ -11134,7 +11058,7 @@
       "PosRank": 118,
       "OvRank": null
     },
-    "293": {
+    "291": {
       "Rk": 295,
       "Player": "Jaeden Graham",
       "PlayerCode": "GrahJa01",
@@ -11172,7 +11096,7 @@
       "PosRank": 47,
       "OvRank": null
     },
-    "294": {
+    "292": {
       "Rk": 296,
       "Player": "Cordarrelle Patterson",
       "PlayerCode": "PattCo00",
@@ -11210,7 +11134,7 @@
       "PosRank": 120,
       "OvRank": null
     },
-    "295": {
+    "293": {
       "Rk": 297,
       "Player": "Parris Campbell",
       "PlayerCode": "CampPa00",
@@ -11248,11 +11172,11 @@
       "PosRank": 123,
       "OvRank": null
     },
-    "296": {
+    "294": {
       "Rk": 298,
       "Player": "Trevor Davis",
       "PlayerCode": "DaviTr03",
-      "Tm": "2TM",
+      "Tm": "MIA",
       "FantPos": "WR",
       "Age": 26,
       "G": 11,
@@ -11286,7 +11210,7 @@
       "PosRank": 122,
       "OvRank": null
     },
-    "297": {
+    "295": {
       "Rk": 299,
       "Player": "Richie James",
       "PlayerCode": "JameRi00",
@@ -11324,7 +11248,7 @@
       "PosRank": 121,
       "OvRank": null
     },
-    "298": {
+    "296": {
       "Rk": 300,
       "Player": "Marcedes Lewis",
       "PlayerCode": "LewiMa00",
@@ -11362,7 +11286,7 @@
       "PosRank": 50,
       "OvRank": null
     },
-    "299": {
+    "297": {
       "Rk": 301,
       "Player": "Logan Thomas",
       "PlayerCode": "ThomLo00",
@@ -11398,6 +11322,82 @@
       "FDPt": 26.6,
       "VBD": null,
       "PosRank": 48,
+      "OvRank": null
+    },
+    "298": {
+      "Rk": 315,
+      "Player": "Josh Rosen",
+      "PlayerCode": "RoseJo01",
+      "Tm": "MIA",
+      "FantPos": "QB",
+      "Age": 22,
+      "G": 6,
+      "GS": 3,
+      "Cmp": 58,
+      "PassAtt": 109,
+      "PassYds": 567,
+      "PassTD": 1,
+      "Int": 5,
+      "RushAtt": 3,
+      "RushYds": 13,
+      "Y": {
+        "A": 4.33,
+        "R": null
+      },
+      "RushTD": 0,
+      "Tgt": 0,
+      "Rec": 0,
+      "RecYds": 0,
+      "RecTD": 0,
+      "Fmb": 1,
+      "FL": 0,
+      "TD": 0,
+      "_2PM": 0,
+      "_2PP": 0,
+      "FantPt": 18,
+      "PPR": 18,
+      "DKPt": 26,
+      "FDPt": 23,
+      "VBD": null,
+      "PosRank": 49,
+      "OvRank": null
+    },
+    "299": {
+      "Rk": 321,
+      "Player": "Cam Newton",
+      "PlayerCode": "NewtCa00",
+      "Tm": "CAR",
+      "FantPos": "QB",
+      "Age": 30,
+      "G": 2,
+      "GS": 2,
+      "Cmp": 50,
+      "PassAtt": 89,
+      "PassYds": 572,
+      "PassTD": 0,
+      "Int": 1,
+      "RushAtt": 5,
+      "RushYds": -2,
+      "Y": {
+        "A": -0.4,
+        "R": null
+      },
+      "RushTD": 0,
+      "Tgt": 0,
+      "Rec": 0,
+      "RecYds": 0,
+      "RecTD": 0,
+      "Fmb": 2,
+      "FL": 2,
+      "TD": 0,
+      "_2PM": 0,
+      "_2PP": 0,
+      "FantPt": 17,
+      "PPR": 16.7,
+      "DKPt": 22.7,
+      "FDPt": 17.7,
+      "VBD": null,
+      "PosRank": 50,
       "OvRank": null
     },
     "300": {

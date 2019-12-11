@@ -32,9 +32,6 @@ export const renderHeader = function() {
       My Team
     </a>
 
-    <a class="navbar-item">
-      <input class="input" type="text" placeholder="Search">
-    </a>
   
       </div>
     </div>
@@ -57,7 +54,7 @@ export const renderHeader = function() {
 <div id="pageheader">
   <nav class ="breadcrumb is-centered" aria-label="breadcrumbs">
     <ul>
-      <li class="is-active"><a href="players.html" aria-current="page">All Players</a></li>
+      <li><a href="players.html">All Players</a></li>
       <li><a href="qb.html">Quarterbacks</a></li>
       <li><a href="rb.html">Runningbacks</a></li>
       <li><a href="wr.html">Wide Receivers</a></li>
@@ -77,7 +74,7 @@ export const renderHeader = function() {
 export const renderPage = function(player, team) {
     // TODO: Copy your code from a04 to render the hero card
    return `
-   <div class="column is-one-quarter" style="background: ${team.Primary}; margin: 1%; width: 31%" id=${player.PlayerCode}>
+   <div class="column" style="background: ${team.Primary}; margin: 1%; width: 50%; height: 50%" id=${player.PlayerCode}>
 <div class="card-content" style="text-align: center" >
 <div class="card-image"  style="background: white">
   <figure class="image">
@@ -112,7 +109,7 @@ export const renderPage = function(player, team) {
 
 export const renderBackCard = function(player, team) {
   return `
-<div class="column is-one-quarter " style="background: ${team.Primary}; margin: 1%; width: 31%" id=${player.PlayerCode}>
+<div class="column " style="background: ${team.Primary}; margin: 1%; width: 50%; height: 90%" id=${player.PlayerCode}>
 <div class="card-content" style="text-align: center" >
 <div class="content" style="color: white">
 Passing Attempts: ${player.PassAtt}
@@ -194,7 +191,7 @@ export const loadPage = function(players) {
    $("#root").on("click", "#flip-back-button", handleFlipBackSubmit);
 
     $root.append(renderHeader);
-    $('#pageheader').append('<div class="columns is-multiline" id="addhere" style="margin-left: 0.025%">');
+    $('#pageheader').append('<div class="columns" id="addhere" style="margin-left: 30%; width: 40%; height: 40%">');
     let team;
     
      players.forEach(element => {
