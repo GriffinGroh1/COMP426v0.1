@@ -26,9 +26,6 @@ export const renderHeader = function() {
     <a class="navbar-item" onclick="window.open('myTeam.html', '_self')">
       My Team
     </a>
-    <a class="navbar-item">
-      <input class="input" type="text" placeholder="Search">
-    </a>
   
     
       </div>
@@ -62,7 +59,7 @@ export const renderPage = function(player, team) {
  <img class="image" style="display: inline-block; width: 7%; height: 7%" src="${team.Img}">
  <img class="image" style="display: inline-block; width: 10%; height: 10%" src="${player.Img}">
  &nbsp;&nbsp;${player.Player} -- ${player.FantPos} -- ${team.Place} ${team.Mascot}
-<span style="float: right">Points: ${player.FantPt}&nbsp;&nbsp;&nbsp;<button id = ${player.PlayerCode} class="button is-dark">Remove Player</button></span></p>
+<span style="float: right">Points: ${player.FantPt}&nbsp;&nbsp;&nbsp;</span></p>
  <p class="subtitle is-6" style="background: ${team.Primary}; color: white; text-align: center">
  <span style="font-weight: bold">Pass Att: </span>${player.PassAtt} &nbsp;&nbsp;
  <span style="font-weight: bold">Pass Yds: </span>${player.PassYds} &nbsp;&nbsp;
@@ -109,25 +106,24 @@ export const handleFlipBackSubmit = function(event) {
 
 };
 export async function handleRemoveClick(event) {
-  alert("Remove?")
-  alert(event.currentTarget.id)
+  //alert("Remove?")
+  //alert(event.currentTarget.id)
   let playerToRemove = event.currentTarget.id;
 
   //Testing code
   let tok = localStorage.getItem('jwt');
   let authHeader = "Bearer " + tok;
-  alert(playerToRemove)
+  //alert(playerToRemove)
   const result = await axios({
     method: 'delete',
-    url: 'http://localhost:3000/user/players',
+    url: 'http://localhost:3000/user/players/',
     headers: {Authorization: authHeader},
-    data: {
-      
-        'player': playerToRemove
-      
+  
+    params: {
+      [playerToRemove]: playerToRemove
     }
   })
-  alert("Deleted")
+  //alert("Deleted")
 
 
   //getPlayers()
@@ -145,7 +141,7 @@ export const loadPage = function(players) {
     $root.on('click', '.button, .is-dark', handleRemoveClick);
 
     $root.append(renderHeader);
-    $('#pageheader').append('<div id="addhere" class="column"><p class="title is-2" style="text-align: center">--- Welcome to My Team ---</p><p class="subtitle" style="text-align: center">Add Players to Find the Best Possible Team</p>');
+    $('#pageheader').append(`<div id="addhere" class="column"><p class="title is-2" style="text-align: center">--- Welcome to My Team ---</p><p class="subtitle" style="text-align: center">Add Players to Find the Best Possible Team</p><p style="text-align: center"><button id = 'deleteTeam' class = "button is-dark">Reset Team</button></p></br>`);
     let team;
     let totalPoints = 0;
     let totPassAtt = 0;

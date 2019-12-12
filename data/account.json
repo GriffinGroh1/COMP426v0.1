@@ -137,6 +137,9 @@
     },
     "newtest": {
       "passwordHash": "$2a$10$.g2r4Zg3ScjSWJIWtgEnRexy93NIOb2AHN2SI7M0haLyAPqmeVANC"
+    },
+    "griffin223": {
+      "passwordHash": "$2a$10$XcaSDs3qrNwSszOLQn8iD.EU83aJ/Cgoh6DQu0NhUAMfWp9uQfAci"
     }
   }
 }

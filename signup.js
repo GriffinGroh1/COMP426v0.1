@@ -46,10 +46,10 @@ export async function signInClick() {
     //alert(x)
     localStorage.jwt = x;
     correctToken = x;
-    alert(x)
+  //  alert(x)
     localStorage.setItem('jwt', x.jwt)
     console.log(x)
-    alert("B")
+  //  alert("B")
     console.log(localStorage.getItem('jwt'))
     $message.html('<span class="has-text-success">Success! You are now logged in.</span>');
   }).catch(() => {
