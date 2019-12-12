@@ -36,7 +36,15 @@
     "griffin22": {
       "line1": "a",
       "line2": "b"
-    }
+    },
+    "players": [
+      {
+        "JackLa00": "JackLa00"
+      },
+      {
+        "HenrHu00": "HenrHu00"
+      }
+    ]
   },
   "newtest": {
     "players": [
