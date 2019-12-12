@@ -214,7 +214,7 @@ export async function handleAddTeam(event) {
     //withCredentials: true,
     data: {
       'data': {
-        'player': axiosPass,
+        [axiosPass]: axiosPass,
       },
       "type": "merge"
     }

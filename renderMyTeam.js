@@ -206,12 +206,20 @@ export async function getPlayers() {
     //an array of players for user
   let anArray = result.data.result;
 
+  let keyArray = []
   for (let i = 0; i < anArray.length; i++) {
-    console.log(anArray[i].player)
+    console.log(Object.keys(anArray[i]))
+    keyArray.push(Object.keys(anArray[i]))
   }
+  //console.log("S")
+  //let keyArray = Object.keys(anArray[i]);
+  console.log(keyArray)
+  console.log("L")
   let emptyArray = []
   for (let i = 0; i < anArray.length; i++) {
-    let editPlayer = playerData.find((player) => player.PlayerCode == anArray[i].player);
+    let editPlayer = playerData.find((player) => player.PlayerCode == keyArray[i][0]);
+    console.log(keyArray[i][0])
+    //console.log('i')
     emptyArray.push(editPlayer)
   }
   console.log(emptyArray)

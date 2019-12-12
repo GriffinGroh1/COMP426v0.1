@@ -134,6 +134,9 @@
     },
     "bobby": {
       "passwordHash": "$2a$10$pR2UnMoNH9sN/u0zqKnmGOQiXLvtl/FgqBS0boUEZHi4cSCXacs0q"
+    },
+    "newtest": {
+      "passwordHash": "$2a$10$.g2r4Zg3ScjSWJIWtgEnRexy93NIOb2AHN2SI7M0haLyAPqmeVANC"
     }
   }
 }

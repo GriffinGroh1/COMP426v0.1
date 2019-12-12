@@ -37,5 +37,27 @@
       "line1": "a",
       "line2": "b"
     }
+  },
+  "newtest": {
+    "players": [
+      {
+        "McCaCh01": "McCaCh01"
+      },
+      {
+        "JackLa00": "JackLa00"
+      },
+      {
+        "CookDa01": "CookDa01"
+      },
+      {
+        "HenrDe00": "HenrDe00"
+      },
+      {
+        "JoneAa00": "JoneAa00"
+      },
+      {
+        "ElliEz00": "ElliEz00"
+      }
+    ]
   }
 }
