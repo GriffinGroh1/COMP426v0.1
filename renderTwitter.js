@@ -16,7 +16,7 @@ export async function render() {
   console.log(res.data.result[0])
   let arr = res.data.result;
   const $root = $('#root');
-  for (let i = 10; i < arr.length ; i++) {
+  for (let i = 30; i < arr.length ; i++) {
     $root.append('<p>' + arr[i] + '</p>')
   }
 }

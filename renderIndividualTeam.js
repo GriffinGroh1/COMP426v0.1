@@ -89,7 +89,7 @@ Total PPR Points: ${player.PPR}
 <br>
 Position Rank: ${player.PosRank}
   <br></br>
-  <button id="add-button" class="button is-black">Add to Team</button>  
+  <button id="add-button" class="button is-black" data="${player.PlayerCode}">Add to Team</button>  
   <button id="flip-button" class="button is-black" data="${player.PlayerCode}">Flip Card</button>  
 
   
@@ -124,7 +124,7 @@ Receiving Yards: ${player.RecYds}
 <br>
 Receiving TDs: ${player.RecTD}
 <br></br>
-<button id="add-button" class="button is-black">Add to Team</button>  
+<button id="add-button" class="button is-black" data="${player.PlayerCode}">Add to Team</button>  
 <button id="flip-back-button" class="button is-black" data="${player.PlayerCode}">Flip Card</button>  
 
 
@@ -172,7 +172,35 @@ $(`#${editPlayer.PlayerCode}`).replaceWith(PlayerForm);
 }; 
 
 
-
+export async function handleAddTeam(event) {
+  event.preventDefault()
+  console.log(event.currentTarget)
+  let PlayerCode = $(event.currentTarget).attr("data");
+  console.log(PlayerCode)
+  let editPlayer = playerData.find((player) => player.PlayerCode == PlayerCode);
+  console.log(editPlayer)
+  let team = teamData.find((t) => t.Team == editPlayer.Tm);
+  console.log(editPlayer.Player);
+  let playerAdd = editPlayer.Player;
+  //
+  let axiosPass = PlayerCode;
+  alert('Added to team!');
+  let tok = localStorage.getItem('jwt');
+  let authHeader = 'Bearer ' + tok;
+  //alert(authHeader)
+  const result = await axios({
+    method: 'post',
+    url: 'http://localhost:3000/user/players',
+    headers: {Authorization: authHeader},
+    //withCredentials: true,
+    data: {
+      'data': {
+        [axiosPass]: axiosPass,
+      },
+      "type": "merge"
+    }
+  });
+}
 
 
 /**
@@ -185,6 +213,7 @@ export const loadPage = function(teamData) {
      // Grab a jQuery reference to the root HTML element
      const $root = $('#root');
       $root.append(renderHeader());
+      $('#root').on('click', '#add-button', handleAddTeam);
     
       $root.on("click", "#flip-button", handleFlipSubmit);
       $root.on("click", "#flip-back-button", handleFlipBackSubmit);
