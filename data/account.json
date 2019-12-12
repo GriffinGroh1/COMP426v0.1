@@ -1,5 +1,8 @@
 {
   "users": {
+    "123": {
+      "passwordHash": "$2a$10$3Xy9IwXAPI4oClHOdMxgY.7FCj4xzwzRD9ITA3Uljz/zR0OTK4K.S"
+    },
     "asd": {
       "passwordHash": "$2a$10$LpkjyjiRhY52887Qlp4YPOPAxNhe16Z9kYPwXY7ZggIT7TUqDjTE."
     },
@@ -143,6 +146,21 @@
     },
     "xxx": {
       "passwordHash": "$2a$10$kqmbXFlJ9UrHBvmt50o6y.VufevpK8ztkoZ1OUGrA3Azc./wCsmTa"
+    },
+    "harryboi": {
+      "passwordHash": "$2a$10$Pc4MG/mvwUWXhLR.fYSzTe0emkUYZx1454v6SDe.Kg2lcnRkjY2F."
+    },
+    "zxcv": {
+      "passwordHash": "$2a$10$YwgVi6ZJqP3lMu2NeXQvy.bP10vEIpe9HprZMyNOQmM0rC/PX3Wn6"
+    },
+    "dom": {
+      "passwordHash": "$2a$10$yKL2.JG8UEw/KkzCvHFAiOdBeC43w8tsP3hfWd2yxjYl599qeXABe"
+    },
+    "domgiordano1": {
+      "passwordHash": "$2a$10$mnQBW9Bq3PgZwsLMjmN9muYFUni/rptQfQhWqOF1Olj3mV10evAdq"
+    },
+    "griffin3333": {
+      "passwordHash": "$2a$10$abE.FqcgmEA6A.CjEQvIuuxTEVUAnuOkTc6h88sCl4IIxmLAaOn22"
     }
   }
 }

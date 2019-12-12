@@ -2,7 +2,7 @@
 
 $(function() {
     //loadPage();
-    render()
+    render();
     $(document).on("click", "#submitBtn", buttonClick);
 });
 export async function render() {
@@ -16,8 +16,8 @@ export async function render() {
   console.log(res.data.result[0])
   let arr = res.data.result;
   const $root = $('#root');
-  for (let i = 30; i < arr.length ; i++) {
-    $root.append('<p>' + arr[i] + '</p>')
+  for (let i = arr.length-1; i >= 30 ; i--) {
+    $root.append('<div class="hero"><p><span style="font-weight: bold; color: gold">&nbsp;&nbsp;@FootballGuy'+(i-29)+':</span></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + arr[i] + '</p></div>')
   }
 }
 export async function buttonClick() {
@@ -29,7 +29,7 @@ export async function buttonClick() {
 
     let authHeader = 'Bearer ' + tok.jwt;
     //alert(document.getElementById('inputField').value)
-    let stringPost = document.getElementById('inputField').value
+    let stringPost = document.getElementById('inputfield').value
     //alert(stringPost)
     const result = await axios({
       method: 'post',

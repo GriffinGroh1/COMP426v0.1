@@ -54,6 +54,7 @@ export const renderHeader = function() {
     </div>
   </div>
 </nav>
+
 <div id="pageheader">
 </div>
 
@@ -99,7 +100,7 @@ export const loadPage = function(teamData) {
 
       $root.on("click", ".button, is-dark", handleTeamButton);
      
-   $('#pageheader').append('<div class="columns is-multiline" id="addhere">');
+   $('#pageheader').append('<p class="title is-2" style="text-align: center">--- Select a Team to View the Players ---</p><div class="columns is-multiline" id="addhere">');
   
       teamData.forEach(element =>{
       
